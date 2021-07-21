@@ -1,2 +1,81 @@
+:root{
+    /*COLORS*/
+    --clr-very-dark-desat-blue: hsl(238,29%,16%);
+    --clr-soft-red: hsl(14,88%,65%);
+    --clr-soft-violet: hsl(273,75%,66%);
+    --clr-soft-blue: hsl(240,73%,65%);
+    --clr-very-dark-gray-blue: hsl(237,12%,33%);
+    --clr-dark-gray-blue: hsl(240,6%,50%);
+    --clr-light-gray-blue: hsl(240,5%,91%);
+    
+}
+
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+}
+
+
+
+body {
+    background-image: linear-gradient(90deg, var(--clr-soft-violet), var(--clr-soft-blue));
+    max-width: 100%;
+    min-height: 0vh;
+    font-family: "Kumbh Sans", sans-serif;
+    color: #1d1e35;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    padding: 1.25rem;
+}
+
+h1{
+    padding: 2em;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    transform: translateY(6rem);
+    
+}
+
+.container {
+    background-color: ivory;
+    width: 80%;
+    margin-inline: auto;
+    padding: 1em;
+   
+}
+
+/* ACCORDION STYLE */
+.arrow-up {
+    display: none;
+    transform: rotateZ(180deg);
+
+}
+.accordion-link {
+    width: 100%;
+}
+.answer {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordion-item:target .answer {
+    max-height: 20rem;
+}
+.accordion-item:target .arrow-down {
+    display: none;
+}
+
+.accordion-item:target .arrow-up {
+    display: flex;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
