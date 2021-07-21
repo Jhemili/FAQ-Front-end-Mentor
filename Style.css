@@ -29,35 +29,65 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 1.5rem;
+    padding: 0 5rem;
 }
 
-.illustration {
-    transform: translateX(-4.5rem);
+.illustration-container {
+    transform: translateX(-7rem);
+    width: 100%;  
     position: relative;
-    
 }
 
 .illustration-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-    
+    max-width: 100%;
+}
+
+.illustration-box {
+    position: absolute;
+    bottom: 1.5rem;  
+    left: -5rem; 
 }
 
 .container {
-    width: 100%;
-    max-width: 90em;
-    padding: 3rem;
-    background-color: var(--clr-light-gray-blue);
+    max-width: 70em;
+    padding: 4rem;
+    background-color: white;
     display: flex;
     align-items: center;
     border-radius: 1.5rem;
     
 }
 
-/* ACCORDION STYLE 
+/*ACCORDION ITEM STYLE */
+
+.accordion-item{
+    border-bottom: 1px solid var(--clr-light-gray-blue);
+}
+
+.accordion-item a {
+    text-decoration: none;
+    line-height: 1.5rem;  
+    width: 100%;
+    margin-top: .5rem;
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-item p {
+    padding: 1rem 0;
+    
+}
+
+@media screen and (max-width: 685px) {
+    .container {
+        flex-direction: column;
+
+    }
+}
+/* ACCORDION DYNAMIC  
 .arrow-up {
     display: none;
     transform: rotateZ(180deg);
