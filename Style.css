@@ -107,6 +107,13 @@ h1 {
 
 }
 
+section {
+    margin-bottom: 1.5rem;
+} 
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 /* ACCORDION DYNAMIC */
 .arrow-up {
     display: none;
@@ -124,12 +131,15 @@ h1 {
 .question-item:target .answer {
     max-height: 20rem;
 }
-section {
-    margin-bottom: 1.5rem;
-} 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.question-item:target .arrow-up{
+    display: flex;
+}
+
+.question-item:target .arrow-down {
+    display: none;
+}
+
 
 @media screen and (min-width: 1440px) {
     .container {
