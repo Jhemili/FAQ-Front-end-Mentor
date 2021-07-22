@@ -115,6 +115,9 @@ section {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* ACCORDION DYNAMIC */
+.question-link:hover {
+    color: var(--clr-soft-red);
+}
 .arrow-up {
     display: none;
     transform: rotateZ(180deg);
