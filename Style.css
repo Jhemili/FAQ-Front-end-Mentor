@@ -130,3 +130,33 @@ section {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+        
+    }
+    .card-text {
+        width: 50%;
+    }
+    .card-img {
+        width: 50%;
+    }
+
+    .img-woman {    
+        transform: translate(35%, 0%);      
+    }
+    .card {
+        background-size: 50%;
+        background-position: left -5rem bottom;
+    }
+
+    .img-box {
+        left: -5rem;
+        transform: translate(-2rem, 7rem);
+        
+    }
+    
+
+
+}
