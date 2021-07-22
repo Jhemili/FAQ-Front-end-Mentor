@@ -7,7 +7,11 @@
     --clr-very-dark-gray-blue: hsl(237,12%,33%);
     --clr-dark-gray-blue: hsl(240,6%,50%);
     --clr-light-gray-blue: rgb(201, 201, 201);
-    --clr-very-light-gray: rgb(247, 247, 247);
+    --clr-almost-white: rgb(247, 247, 247);
+
+    /* TYPOGRAPHY */
+    --font-primary: 'Kumbh Sans';
+
     
 }
 
@@ -21,35 +25,108 @@
 
 body {
     background-image: linear-gradient(90deg, var(--clr-soft-violet), var(--clr-soft-blue));
-    padding: 5rem;
+    padding: 4rem 2rem 0 2rem;
+    font-family: var(--font-primary);
+    font-size: .8rem;
+    color: var(--clr-very-dark-desat-blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 
+.card {
+    background-color: var(--clr-almost-white);
+    border-radius: 1.5rem;
+    position: relative;
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;    
+    background-position: top -.5rem center;
+    background-size: 80%;
+    
+}
 
-/* ACCORDION DYNAMIC  
+.img-box {
+    position: absolute;
+    max-width: 25%;
+    left: 0%;
+    transform: translate(2.3rem,-2rem);
+    z-index: 1;
+}
+
+
+.card-img {
+    position: relative;
+    height: 6rem;
+}
+
+.img-woman {    
+    max-width: 100%;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    transform: translate(50%, -60%);
+    padding: 2rem;
+}
+
+.card-text {
+    padding: 1.5rem;
+    
+}
+
+.answer p {
+    padding: 1rem 0 1rem 0;
+}
+.question-item {
+    padding-top: 1rem;
+    border-bottom: solid 1px var(--clr-light-gray-blue);
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.question-link {
+    text-decoration: none;
+    color: var(--clr-very-dark-desat-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5rem;
+
+}
+
+/* ACCORDION DYNAMIC */
 .arrow-up {
     display: none;
     transform: rotateZ(180deg);
-
-}
-.accordion-link {
-    width: 100%;
 }
 .answer {
     max-height: 0;
     overflow: hidden;
 }
 
-.accordion-item:target .answer {
-    max-height: 20rem;
-}
-.accordion-item:target .arrow-down {
-    display: none;
+.question-item:target a {
+    font-weight: 700;
 }
 
-.accordion-item:target .arrow-up {
-    display: flex;
+.question-item:target .answer {
+    max-height: 20rem;
 }
-*/
+section {
+    margin-bottom: 1.5rem;
+} 
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
