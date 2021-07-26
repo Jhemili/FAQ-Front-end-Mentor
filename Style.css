@@ -83,6 +83,7 @@ body {
     padding-top: 1rem;
     border-bottom: solid 1px var(--clr-light-gray-blue);
 }
+
 .question {
     display: flex;
     justify-content: space-between;
@@ -93,8 +94,8 @@ body {
 h1 {
     text-transform: uppercase;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .question-link {
@@ -143,31 +144,27 @@ section {
     display: none;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
 
 @media screen and (min-width: 1440px) {
     .container {
         display: flex;
-       
     }
+
     .card-text {
         width: 50%;
         
     }
     .card-img {
         width: 50%;
-        
     }
 
     .img-woman {    
+        padding: 0;
         transform: translate(35%, 0%);      
     }
     .card {
         background-size: 50%;
-        background-position: left -5rem bottom -3rem;
+        background-position: left -2rem bottom -3rem;
     }
 
     .img-box {
