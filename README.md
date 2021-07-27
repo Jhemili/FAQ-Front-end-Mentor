@@ -22,14 +22,15 @@ Users should be able to:
 
 
 ## My process
-  The accordion menu is pretty straight foward. With target selector we can do nice tricks and for this challenge it was enough, dismissing the necessity of JS.
-  The most challenging part was to position the images out of the layout flow, but once I undestood how each property works everything came together.
+  In the first attempt to this challenge I used the target selector to set the accordion menu, but, thanks to the feedbacks I got in Slack communit, I found out about the tags Details and Summary which in this context works better and brings the possibility to open and close the questions without JS.
+  The most challenging part was to position the images out of the layout flow, but once I undestood how absoluty and relative property works everything came together.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Details and Summary
 - Mobile-first workflow
 
 ### Learning
@@ -57,7 +58,6 @@ Users should be able to:
 
 
 ### Useful resources
-
 - [Example resource 1](https://www.youtube.com/watch?v=MXrtXg1kpVs&t=1280s) - This helped me with the target selector to code the accordion. 
 - [Example resource 2](https://www.w3schools.com/cssref/sel_target.asp) - This is an amazing article which helped me fully understand target selector. I'd recommend it to anyone still learning this concept.
-
+- [Example resource 3](https://app.slack.com) - The feedback I've got from Slack community was crucial to this project. 
